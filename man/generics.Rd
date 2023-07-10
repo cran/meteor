@@ -11,6 +11,6 @@
 \title{Generic functions}
 
 \description{
-These are generic functions that are declared in this package but have no implementation here. They are to be used by packages that depend on this package.
+These are generic functions that are declared in this package but have no implementation here. 
 }
 

@@ -1,9 +1,16 @@
 
+	
 if (!isGeneric("crop<-")) { setGeneric("crop<-", function(x, value) standardGeneric("crop<-")) }	
 if (!isGeneric("soil<-")) { setGeneric("soil<-", function(x, value) standardGeneric("soil<-")) }	
 if (!isGeneric("control<-")) { setGeneric("control<-", function(x, value) standardGeneric("control<-")) }	
 if (!isGeneric("weather<-")) { setGeneric("weather<-", function(x, value) standardGeneric("weather<-")) }	
 if (!isGeneric("run")) { setGeneric("run", function(x, ...) standardGeneric("run")) }	
+# use predict for this
+#if (!isGeneric("runSpatial")) { setGeneric("runSpatial", function(x, ...) standardGeneric("runSpatial")) }	
+
+#if (!isGeneric("location<-")) { setGeneric("location<-", function(x, value) standardGeneric("location<-")) }
+#if (!isGeneric("parameters<-")) { setGeneric("parameters<-", function(x, value) standardGeneric("parameters<-")) }	
+#if (!isGeneric("options<-")) { setGeneric("options<-", function(x, value) standardGeneric("options<-")) }	
 
 
 setClass("Weather",
@@ -67,9 +74,9 @@ setMethod ('show' , 'Weather',
 		#cat('class       :' , class(object), '\n')
 		cat('longitude:' , object@longitude, ' latitude:' , object@latitude, ' elevation:', object@elevation, '\n')
 		cat('\n')
-		print(head(object@data, 3))
+		print(utils::head(object@data, 3))
 		cat('...\n')
-		print(tail(object@data, 3))
+		print(utils::tail(object@data, 3))
 	}
 )	
 	
