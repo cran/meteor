@@ -5,10 +5,6 @@
     .Call(`_meteor_bcppvars`, prec, tmin, tmax)
 }
 
-.utci <- function(ta, tg, va, hurs) {
-    .Call(`_meteor_v_utci`, ta, tg, va, hurs)
-}
-
 .pwc_utci <- function(utci, adjust) {
     .Call(`_meteor_pwc_utci`, utci, adjust)
 }

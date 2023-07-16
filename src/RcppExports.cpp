@@ -23,20 +23,6 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// v_utci
-std::vector<double> v_utci(const std::vector<double>& ta, const std::vector<double>& tg, const std::vector<double>& va, const std::vector<double>& hurs);
-RcppExport SEXP _meteor_v_utci(SEXP taSEXP, SEXP tgSEXP, SEXP vaSEXP, SEXP hursSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const std::vector<double>& >::type ta(taSEXP);
-    Rcpp::traits::input_parameter< const std::vector<double>& >::type tg(tgSEXP);
-    Rcpp::traits::input_parameter< const std::vector<double>& >::type va(vaSEXP);
-    Rcpp::traits::input_parameter< const std::vector<double>& >::type hurs(hursSEXP);
-    rcpp_result_gen = Rcpp::wrap(v_utci(ta, tg, va, hurs));
-    return rcpp_result_gen;
-END_RCPP
-}
 // pwc_utci
 std::vector<double> pwc_utci(const std::vector<double>& utci, const bool adjust);
 RcppExport SEXP _meteor_pwc_utci(SEXP utciSEXP, SEXP adjustSEXP) {
@@ -347,7 +333,6 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_meteor_bcppvars", (DL_FUNC) &_meteor_bcppvars, 3},
-    {"_meteor_v_utci", (DL_FUNC) &_meteor_v_utci, 4},
     {"_meteor_pwc_utci", (DL_FUNC) &_meteor_pwc_utci, 2},
     {"_meteor_pwc_wbgt", (DL_FUNC) &_meteor_pwc_wbgt, 2},
     {"_meteor_Tg1", (DL_FUNC) &_meteor_Tg1, 7},

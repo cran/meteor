@@ -2,7 +2,8 @@
 # License GPL3
 
 if (!isGeneric("pwc")) {setGeneric("pwc", function(x, ...) standardGeneric("pwc"))}
-if (!isGeneric("utci")) {setGeneric("utci", function(x, ...) standardGeneric("utci"))}
+
+#if (!isGeneric("utci")) {setGeneric("utci", function(x, ...) standardGeneric("utci"))}
 
 
 setMethod("pwc", signature(x="numeric"),
@@ -41,12 +42,12 @@ setMethod("pwc", signature(x="SpatRaster"),
 )
 
 
-setMethod("utci", signature(x="data.frame"),
-	function(x) {
-		if (!all(c("temp", "rhum", "tglb", "wind") %in% names(x))) {
-			stop("x must have variables 'temp', 'rhum', 'wind', and 'tglb'")		
-		}
-		.utci(x$temp, x$tglb, x$wind, x$rhum)
-	}
-)
+#setMethod("utci", signature(x="data.frame"),
+#	function(x) {
+#		if (!all(c("temp", "rhum", "tglb", "wind") %in% names(x))) {
+#			stop("x must have variables 'temp', 'rhum', 'wind', and 'tglb'")		
+#		}
+#		.utci(x$temp, x$tglb, x$wind, x$rhum)
+#	}
+#)
 

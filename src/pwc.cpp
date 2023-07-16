@@ -238,7 +238,7 @@ inline double utci(const double &ta, const double &tg, const double &wnd, const 
 
 
 
-// [[Rcpp::export(name = ".utci")]]
+// export name = ".utci"
 std::vector<double> v_utci(const std::vector<double> &ta, const std::vector<double> &tg, const std::vector<double> &va, const std::vector<double> &hurs) {
 	size_t n = ta.size();
 	std::vector<double> out;

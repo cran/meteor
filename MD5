@@ -1,7 +1,7 @@
-77bb922c6e5dbbac3f4ed0b40b5ce3f8 *DESCRIPTION
+e6a514bc87b13f9bacdde72ea3044151 *DESCRIPTION
 bd881cc73d3ab07ccdfad80d74780e42 *NAMESPACE
 c1d2d01e03f7e65c25466e120548e84f *R/ET.R
-489d7cc58b688b4ce8d8956446887941 *R/RcppExports.R
+6feb622aeec0d1c6aefa9f537e326994 *R/RcppExports.R
 5ebbe064658dc23eb3bcbc22879f1786 *R/SVP.R
 b322606a84e0ed32684e6ead1a79356f *R/aaa_classes.R
 1adb875fe18b6003e328a3fec3b26a51 *R/bioclim.R
@@ -16,7 +16,7 @@ f7890cc3c9e8e7d1fbaba7bca1470f00 *R/humidity.R
 eab9ddc2922b111917ee0553d947096f *R/leafwet.R
 7a1ebf83acfb7a7e42d8dc6bc11613e1 *R/movingFun.R
 5cd1c54d1ebe58badb069fd94912fdc9 *R/pet.R
-f5c4723973311404cb1497313c86f573 *R/pwc.R
+7a1003b764f01f12a322876ae2d85534 *R/pwc.R
 37c048e52c7b3bb7eac3ee8ca4d0fae1 *R/solar.R
 42723ce67228dac4cb6d036fd4514f75 *R/temperature.R
 8f915c226d7017579a97616dc0308b6d *R/writeFSE.R
@@ -51,12 +51,11 @@ eed1130fe507c3b97842299c576da8fd *man/generics.Rd
 6e687928c7f99cfc5d3084da24b856a0 *man/power_weather.Rd
 29d05c48965e6c545a40b88f38ffba1b *man/pwc.Rd
 36bcfa7d6231420049f0aa567c70d732 *man/radiation.Rd
-a2e96eddc34e8ae6e726f96edf8dfe97 *man/utci.Rd
 3157001b937790a9922bff5b29a89568 *man/vaporpressure.Rd
-5e35beba3177e7c2f52e047227c25494 *src/RcppExports.cpp
+09b9a0e8917e2d4f4ef826be47cbcaf4 *src/RcppExports.cpp
 78d4f18b35de6b5aabe64d67b535c548 *src/SimUtil.h
 fd75d8a54704e742cf215248e8f1515e *src/biovars.cpp
-acbe80f3e9ca8b963f994829834476ee *src/pwc.cpp
+c2d0b289428632977e7d7de6c7648124 *src/pwc.cpp
 b37088a8fda028c03a6b01c1972bd774 *src/pwc_raster.cpp
 838a9b8b84f091e470b8546711a57d9d *src/simmeteo.cpp
 8ac2f1e58918484109fb70ea2da56e96 *src/simmeteo.h
